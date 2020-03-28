@@ -24,8 +24,8 @@ class _LoveState extends State<Love> {
          int sum2 = sumCalc(secondName);
 
          int totalSum = sum1 + sum2;
-         totalSum = totalSum%10;
-         totalSum= totalSum*10;
+         totalSum = totalSum%9;
+         totalSum= totalSum*9;
 
          percentage = totalSum.toString() + '%';
        }
@@ -70,6 +70,10 @@ class _LoveState extends State<Love> {
                         child: Row(
                           children: <Widget>[
                             SizedBox(width: 25),
+                            Icon(
+                              Icons.favorite
+                            ),
+                            SizedBox(width: 15),
                             Text(
                               "Love Percentage : $percentage",
                               style: TextStyle(fontSize: 28),
@@ -84,7 +88,7 @@ class _LoveState extends State<Love> {
                 TextField(
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    hintText: "Enter Name of First Person",
+                    hintText: "Enter Your Name",
                     border: OutlineInputBorder(),
                   ),
                   controller: t1,
@@ -99,7 +103,7 @@ class _LoveState extends State<Love> {
                 TextField(
                   keyboardType: TextInputType.text,
                   decoration: InputDecoration(
-                    hintText: "Enter Name of Second Person",
+                    hintText: "Enter Name of Your Partner",
                     border: OutlineInputBorder(),
                   ),
                   controller: t2,

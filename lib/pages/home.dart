@@ -20,40 +20,81 @@ class _HomeState extends State<Home> {
         child: ListView(
           children: <Widget>[
             Container(
-                height: 100,
-                child: GradientCard(
-                    gradient: LinearGradient(
-                        colors: [Colors.yellow, Colors.lightGreenAccent]),
-                    elevation: 10,
-                    child: Material(
-                        color: Colors.transparent,
-                        child: InkWell(
-                          splashColor: Colors.black,
-                          onTap: () {
-                            Navigator.pushNamed(context, '/love');
-                          },
-                          child: Padding(
-                            padding: const EdgeInsets.symmetric(
-                                vertical: 10, horizontal: 8),
-                            child: Center(
-                              child: Row(
-                                children: <Widget>[
-                                  SizedBox(width: 25),
-                                  Icon(
-                                    Icons.favorite,
-                                    color: Colors.redAccent,
-                                    size: 50,
-                                  ),
-                                  SizedBox(width: 40),
-                                  Text(
-                                    "CALCULATE LOVE",
-                                    style: TextStyle(fontSize: 28),
-                                  ),
-                                ],
-                              ),
+              height: 100,
+              child: GradientCard(
+                gradient: LinearGradient(
+                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                elevation: 10,
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    splashColor: Colors.black,
+                    onTap: () {
+                      Navigator.pushNamed(context, '/love');
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 8),
+                      child: Center(
+                        child: Row(
+                          children: <Widget>[
+                            SizedBox(width: 25),
+                            Icon(
+                              Icons.favorite,
+                              color: Colors.redAccent,
+                              size: 50,
                             ),
-                          ),
-                        )))),
+                            SizedBox(width: 40),
+                            Text(
+                              "CALCULATE LOVE",
+                              style: TextStyle(fontSize: 28),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 100,
+              child: GradientCard(
+                gradient: LinearGradient(
+                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                elevation: 10,
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    splashColor: Colors.black,
+                    onTap: () {
+                      Navigator.pushNamed(context, '/age');
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 8),
+                      child: Center(
+                        child: Row(
+                          children: <Widget>[
+                            SizedBox(width: 25),
+                            Icon(
+                              Icons.assignment_ind,
+                              color: Colors.redAccent,
+                              size: 50,
+                            ),
+                            SizedBox(width: 40),
+                            Text(
+                              "CALCULATE AGE",
+                              style: TextStyle(fontSize: 28),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
