@@ -133,6 +133,44 @@ class _HomeState extends State<Home> {
                 ),
               ),
             ),
+            Container(
+              height: 100,
+              child: GradientCard(
+                gradient: LinearGradient(
+                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                elevation: 10,
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    splashColor: Colors.black,
+                    onTap: () {
+                      Navigator.pushNamed(context, '/hateness');
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 8),
+                      child: Center(
+                        child: Row(
+                          children: <Widget>[
+                            SizedBox(width: 25),
+                            Icon(
+                              Icons.face,
+                              color: Colors.deepOrange,
+                              size: 50,
+                            ),
+                            SizedBox(width: 25),
+                            Text(
+                              "CALC HATENESS",
+                              style: TextStyle(fontSize: 28),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),

@@ -24,7 +24,7 @@ class _FriendshipState extends State<Friendship> {
          int sum2 = sumCalc(secondName);
 
          int totalSum = sum1 + sum2;
-         totalSum = totalSum%9+9;
+         totalSum = totalSum%9+2;
          totalSum= totalSum*9+1;
 
          percentage = totalSum.toString() + '%';
