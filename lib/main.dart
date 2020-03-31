@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:fun_calculator/pages/home.dart';
 import 'package:fun_calculator/pages/love.dart';
 import 'package:fun_calculator/pages/age.dart';
+import 'package:fun_calculator/pages/friendship.dart';
 
 
 void main() {
@@ -12,6 +13,7 @@ void main() {
         '/': (context) => Home(),
         '/love': (context) => Love(),
         '/age': (context) => Age(),
+        '/friendship': (context) => Friendship(),
       },
     ),
   );

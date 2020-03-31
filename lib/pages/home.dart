@@ -106,7 +106,7 @@ class _HomeState extends State<Home> {
                   child: InkWell(
                     splashColor: Colors.black,
                     onTap: () {
-                      Navigator.pushNamed(context, '/love');
+                      Navigator.pushNamed(context, '/friendship');
                     },
                     child: Padding(
                       padding: const EdgeInsets.symmetric(
