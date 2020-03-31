@@ -41,10 +41,10 @@ class _HomeState extends State<Home> {
                             SizedBox(width: 25),
                             Icon(
                               Icons.favorite,
-                              color: Colors.redAccent,
+                              color: Colors.red,
                               size: 50,
                             ),
-                            SizedBox(width: 40),
+                            SizedBox(width: 25),
                             Text(
                               "CALCULATE LOVE",
                               style: TextStyle(fontSize: 28),
@@ -79,12 +79,50 @@ class _HomeState extends State<Home> {
                             SizedBox(width: 25),
                             Icon(
                               Icons.assignment_ind,
-                              color: Colors.redAccent,
+                              color: Colors.deepPurple,
                               size: 50,
                             ),
-                            SizedBox(width: 40),
+                            SizedBox(width: 25),
                             Text(
                               "CALCULATE AGE",
+                              style: TextStyle(fontSize: 28),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              height: 100,
+              child: GradientCard(
+                gradient: LinearGradient(
+                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                elevation: 10,
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    splashColor: Colors.black,
+                    onTap: () {
+                      Navigator.pushNamed(context, '/love');
+                    },
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 8),
+                      child: Center(
+                        child: Row(
+                          children: <Widget>[
+                            SizedBox(width: 25),
+                            Icon(
+                              Icons.thumbs_up_down,
+                              color: Colors.blue,
+                              size: 50,
+                            ),
+                            SizedBox(width: 25),
+                            Text(
+                              "CALC FRIENDSHIP",
                               style: TextStyle(fontSize: 28),
                             ),
                           ],
