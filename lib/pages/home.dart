@@ -13,14 +13,15 @@ class _HomeState extends State<Home> {
       appBar: AppBar(
         title: Text("FUN CALCULATOR"),
         centerTitle: true,
-        backgroundColor: Colors.grey[700],
+        backgroundColor: Colors.grey[900],
       ),
       body: Container(
+        color: Colors.white,
         padding: EdgeInsets.all(10),
         child: ListView(
           children: <Widget>[
             Container(
-              height: 100,
+              height: 180,
               child: GradientCard(
                 gradient: LinearGradient(
                     colors: [Colors.yellow, Colors.lightGreenAccent]),
@@ -58,7 +59,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             Container(
-              height: 100,
+              height: 180,
               child: GradientCard(
                 gradient: LinearGradient(
                     colors: [Colors.yellow, Colors.lightGreenAccent]),
@@ -96,7 +97,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             Container(
-              height: 100,
+              height: 180,
               child: GradientCard(
                 gradient: LinearGradient(
                     colors: [Colors.yellow, Colors.lightGreenAccent]),
@@ -134,7 +135,7 @@ class _HomeState extends State<Home> {
               ),
             ),
             Container(
-              height: 100,
+              height: 180,
               child: GradientCard(
                 gradient: LinearGradient(
                     colors: [Colors.yellow, Colors.lightGreenAccent]),
