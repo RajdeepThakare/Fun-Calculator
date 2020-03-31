@@ -69,14 +69,16 @@ class _LoveState extends State<Love> {
                       child: Center(
                         child: Row(
                           children: <Widget>[
-                            SizedBox(width: 25),
+                            SizedBox(width: 10),
                             Icon(
-                              Icons.favorite
+                              Icons.favorite,
+                              color: Colors.red,
+                              size: 150,
                             ),
-                            SizedBox(width: 15),
+                            SizedBox(width: 10),
                             Text(
-                              "Love Percentage : $percentage",
-                              style: TextStyle(fontSize: 28),
+                              ": $percentage",
+                              style: TextStyle(fontSize: 60),
                             ),
                           ],
                         ),
