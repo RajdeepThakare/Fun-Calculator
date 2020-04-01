@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "71554198478",
+    "firebase_url": "https://fun-calculator-ads.firebaseio.com",
+    "project_id": "fun-calculator-ads",
+    "storage_bucket": "fun-calculator-ads.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71554198478:android:191b6e4daecbd3367c199f",
+        "android_client_info": {
+          "package_name": "com.rajdeepthakare.fun_calculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71554198478-hmtiseh8f2191vfi7rcov2n6rnupl3ur.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCduMC3IAD-tXT8b-2XLF3uXHzQpBu7HOY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71554198478-hmtiseh8f2191vfi7rcov2n6rnupl3ur.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

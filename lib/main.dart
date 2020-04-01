@@ -6,7 +6,6 @@ import 'package:fun_calculator/pages/age.dart';
 import 'package:fun_calculator/pages/friendship.dart';
 import 'package:fun_calculator/pages/hateness.dart';
 
-
 void main() {
   runApp(
     MaterialApp(
