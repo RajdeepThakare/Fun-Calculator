@@ -23,8 +23,7 @@ class _HomeState extends State<Home> {
             Container(
               height: 180,
               child: GradientCard(
-                gradient: LinearGradient(
-                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                gradient: LinearGradient(colors: [Colors.brown, Colors.brown]),
                 elevation: 10,
                 child: Material(
                   color: Colors.transparent,
@@ -42,13 +41,14 @@ class _HomeState extends State<Home> {
                             SizedBox(width: 25),
                             Icon(
                               Icons.favorite,
-                              color: Colors.red,
+                              color: Colors.redAccent,
                               size: 50,
                             ),
                             SizedBox(width: 25),
                             Text(
                               "CALCULATE LOVE",
-                              style: TextStyle(fontSize: 28),
+                              style:
+                                  TextStyle(fontSize: 28, color: Colors.white),
                             ),
                           ],
                         ),
@@ -62,7 +62,7 @@ class _HomeState extends State<Home> {
               height: 180,
               child: GradientCard(
                 gradient: LinearGradient(
-                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                    colors: [Colors.brown, Colors.brown]),
                 elevation: 10,
                 child: Material(
                   color: Colors.transparent,
@@ -80,13 +80,14 @@ class _HomeState extends State<Home> {
                             SizedBox(width: 25),
                             Icon(
                               Icons.assignment_ind,
-                              color: Colors.deepPurple,
+                              color: Colors.purpleAccent,
                               size: 50,
                             ),
                             SizedBox(width: 25),
                             Text(
                               "CALCULATE AGE",
-                              style: TextStyle(fontSize: 28),
+                              style:
+                                  TextStyle(fontSize: 28, color: Colors.white),
                             ),
                           ],
                         ),
@@ -100,7 +101,7 @@ class _HomeState extends State<Home> {
               height: 180,
               child: GradientCard(
                 gradient: LinearGradient(
-                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                    colors: [Colors.brown, Colors.brown]),
                 elevation: 10,
                 child: Material(
                   color: Colors.transparent,
@@ -118,13 +119,14 @@ class _HomeState extends State<Home> {
                             SizedBox(width: 25),
                             Icon(
                               Icons.thumbs_up_down,
-                              color: Colors.blue,
+                              color: Colors.lightBlueAccent,
                               size: 50,
                             ),
                             SizedBox(width: 25),
                             Text(
                               "CALC FRIENDSHIP",
-                              style: TextStyle(fontSize: 28),
+                              style:
+                                  TextStyle(fontSize: 28, color: Colors.white),
                             ),
                           ],
                         ),
@@ -138,7 +140,7 @@ class _HomeState extends State<Home> {
               height: 180,
               child: GradientCard(
                 gradient: LinearGradient(
-                    colors: [Colors.yellow, Colors.lightGreenAccent]),
+                    colors: [Colors.brown, Colors.brown]),
                 elevation: 10,
                 child: Material(
                   color: Colors.transparent,
@@ -156,13 +158,14 @@ class _HomeState extends State<Home> {
                             SizedBox(width: 25),
                             Icon(
                               Icons.face,
-                              color: Colors.deepOrange,
+                              color: Colors.orangeAccent,
                               size: 50,
                             ),
                             SizedBox(width: 25),
                             Text(
                               "CALC HATENESS",
-                              style: TextStyle(fontSize: 28),
+                              style:
+                                  TextStyle(fontSize: 28, color: Colors.white),
                             ),
                           ],
                         ),
