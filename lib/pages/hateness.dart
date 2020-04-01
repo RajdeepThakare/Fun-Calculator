@@ -50,7 +50,7 @@ class _HatenessState extends State<Hateness> {
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
+            padding: const EdgeInsets.fromLTRB(20, 30, 20, 20),
             child: Container(
               child: Column(
                 children: <Widget>[
@@ -67,13 +67,13 @@ class _HatenessState extends State<Hateness> {
                         child: Center(
                           child: Row(
                             children: <Widget>[
-                              SizedBox(width: 10),
+                              SizedBox(width: 7),
                               Icon(
                                 Icons.face,
                                 color: Colors.deepOrange,
                                 size: 150,
                               ),
-                              SizedBox(width: 10),
+                              SizedBox(width: 5),
                               Text(
                                 ":$percentage",
                                 style: TextStyle(
@@ -106,7 +106,7 @@ class _HatenessState extends State<Hateness> {
                   TextField(
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
-                      hintText: "Enter your friend's name",
+                      hintText: "Enter name of your enemy",
                       border: OutlineInputBorder(),
                     ),
                     controller: t2,

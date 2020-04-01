@@ -8,36 +8,34 @@ class Love extends StatefulWidget {
 
 class _LoveState extends State<Love> {
   String firstName, secondName;
-  String percentage='';
+  String percentage = '';
 
   final TextEditingController t1 = TextEditingController();
   final TextEditingController t2 = TextEditingController();
 
   void calLove() {
     setState(() {
-      if(t1.text.isNotEmpty && t2.text.isNotEmpty)
-       {
-         firstName = t1.text;
-         secondName= t2.text;
+      if (t1.text.isNotEmpty && t2.text.isNotEmpty) {
+        firstName = t1.text;
+        secondName = t2.text;
 
-         int sum1 = sumCalc(firstName);
-         int sum2 = sumCalc(secondName);
+        int sum1 = sumCalc(firstName);
+        int sum2 = sumCalc(secondName);
 
-         int totalSum = sum1 + sum2;
-         totalSum = totalSum%9;
-         totalSum= totalSum*9;
+        int totalSum = sum1 + sum2;
+        totalSum = totalSum % 9;
+        totalSum = totalSum * 9;
 
-         percentage = totalSum.toString() + '%';
-       }
+        percentage = totalSum.toString() + '%';
+      }
     });
   }
-  int sumCalc(String s)
-  {
+
+  int sumCalc(String s) {
     int sum = 0;
-    for(int i= 0; i<s.length;i++)
-      {
-        sum= sum+ s.codeUnitAt(i);
-      }
+    for (int i = 0; i < s.length; i++) {
+      sum = sum + s.codeUnitAt(i);
+    }
     return sum;
   }
 
@@ -51,82 +49,87 @@ class _LoveState extends State<Love> {
       ),
       body: ListView(
         children: <Widget>[
-               Padding(
-          padding: const EdgeInsets.fromLTRB(20, 30, 20, 0),
-          child: Container(
-            child: Column(
-              children: <Widget>[
-                Container(
-                  height: 200,
-                  child: GradientCard(
-                    gradient: LinearGradient(
-                      colors: [Color(0xFF53E0BC), Colors.yellow],
-                    ),
-                    elevation: 20,
-                    child: Padding(
-                      padding:
-                          const EdgeInsets.symmetric(vertical: 10, horizontal: 8),
-                      child: Center(
-                        child: Row(
-                          children: <Widget>[
-                            SizedBox(width: 10),
-                            Icon(
-                              Icons.favorite,
-                              color: Colors.red,
-                              size: 150,
-                            ),
-                            SizedBox(width: 10),
-                            Text(
-                              ": $percentage",
-                              style: TextStyle(fontSize: 60),
-                            ),
-                          ],
+          Padding(
+            padding: const EdgeInsets.fromLTRB(20, 30, 20, 20),
+            child: Container(
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    height: 200,
+                    child: GradientCard(
+                      gradient: LinearGradient(
+                        colors: [Color(0xFF53E0BC), Colors.yellow],
+                      ),
+                      elevation: 20,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 10, horizontal: 8),
+                        child: Center(
+                          child: Row(
+                            children: <Widget>[
+                              //SizedBox(width: 10),
+                              Expanded(
+                                child: Icon(
+                                  Icons.favorite,
+                                  color: Colors.red,
+                                  size: 150,
+                                ),
+                              ),
+                              //SizedBox(width: 10),
+                              Expanded(
+                                child: Text(
+                                  ": $percentage",
+                                  style: TextStyle(fontSize: 60),
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
                   ),
-                ),
-                SizedBox(height: 50),
-                TextField(
-                  keyboardType: TextInputType.text,
-                  decoration: InputDecoration(
-                    hintText: "Enter Your Name",
-                    border: OutlineInputBorder(),
+                  SizedBox(height: 50),
+                  TextField(
+                    keyboardType: TextInputType.text,
+                    decoration: InputDecoration(
+                      hintText: "Enter Your Name",
+                      border: OutlineInputBorder(),
+                    ),
+                    controller: t1,
                   ),
-                  controller: t1,
-                ),
-                SizedBox(height: 10),
-                Icon(
-                  Icons.favorite_border,
-                  color: Colors.red,
-                  size: 80,
-                ),
-                SizedBox(height: 10),
-                TextField(
-                  keyboardType: TextInputType.text,
-                  decoration: InputDecoration(
-                    hintText: "Enter Name of Your Partner",
-                    border: OutlineInputBorder(),
+                  SizedBox(height: 10),
+                  Icon(
+                    Icons.favorite_border,
+                    color: Colors.red,
+                    size: 80,
                   ),
-                  controller: t2,
-                ),
-                SizedBox(height: 50),
-                ButtonTheme(
-                  minWidth: 200,
-                  height: 60,
-                  child: RaisedButton(
-                    elevation: 10,
-                    onPressed: calLove,
-                    child: Text(
-                      "CALCULATE",
-                      style: TextStyle(fontSize: 25, color: Colors.white),
+                  SizedBox(height: 10),
+                  TextField(
+                    keyboardType: TextInputType.text,
+                    decoration: InputDecoration(
+                      hintText: "Enter Name of Your Partner",
+                      border: OutlineInputBorder(),
+                    ),
+                    controller: t2,
+                  ),
+                  SizedBox(height: 50),
+                  ButtonTheme(
+                    minWidth: 200,
+                    height: 60,
+                    child: RaisedButton(
+                      elevation: 10,
+                      onPressed: calLove,
+                      child: Text(
+                        "CALCULATE",
+                        style: TextStyle(fontSize: 25, color: Colors.white),
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
-        ),],
+        ],
       ),
     );
   }

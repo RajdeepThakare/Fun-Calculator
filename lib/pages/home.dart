@@ -4,10 +4,10 @@ import 'package:firebase_admob/firebase_admob.dart';
 
 
 MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-  keywords: <String>['flutterio', 'beautiful apps'],
+  keywords: <String>['flutterio', 'beautiful apps', 'games', 'sports', 'free'],
   contentUrl: 'https://flutter.io',
 //  birthday: DateTime.now(),
-  childDirected: true,
+ // childDirected: true,
 //  designedForFamilies: false,
  // gender: MobileAdGender.male, // or MobileAdGender.female, MobileAdGender.unknown
   testDevices: <String>['512B95F7F4B43AC6309729BA89D817CC'], // Android emulators are considered test devices
@@ -97,13 +97,13 @@ class _HomeState extends State<Home> {
                         child: Center(
                           child: Row(
                             children: <Widget>[
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Icon(
                                 Icons.favorite,
                                 color: Colors.redAccent,
                                 size: 50,
                               ),
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Text(
                                 "CALCULATE LOVE",
                                 style:
@@ -135,13 +135,13 @@ class _HomeState extends State<Home> {
                         child: Center(
                           child: Row(
                             children: <Widget>[
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Icon(
                                 Icons.assignment_ind,
                                 color: Colors.purpleAccent,
                                 size: 50,
                               ),
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Text(
                                 "CALCULATE AGE",
                                 style:
@@ -173,13 +173,13 @@ class _HomeState extends State<Home> {
                         child: Center(
                           child: Row(
                             children: <Widget>[
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Icon(
                                 Icons.thumbs_up_down,
                                 color: Colors.lightBlueAccent,
                                 size: 50,
                               ),
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Text(
                                 "CALC FRIENDSHIP",
                                 style:
@@ -211,13 +211,13 @@ class _HomeState extends State<Home> {
                         child: Center(
                           child: Row(
                             children: <Widget>[
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Icon(
                                 Icons.face,
                                 color: Colors.orangeAccent,
                                 size: 50,
                               ),
-                              SizedBox(width: 25),
+                              SizedBox(width: 10),
                               Text(
                                 "CALC HATENESS",
                                 style:
