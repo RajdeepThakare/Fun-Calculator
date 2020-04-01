@@ -50,7 +50,7 @@ class _FriendshipState extends State<Friendship> {
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 30, 20, 20),
+            padding: const EdgeInsets.fromLTRB(20, 30, 20, 50),
             child: Container(
               child: Column(
                 children: <Widget>[
