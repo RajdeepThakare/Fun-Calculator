@@ -50,12 +50,12 @@ class _HatenessState extends State<Hateness> {
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 30, 20, 50),
+            padding: const EdgeInsets.fromLTRB(10,10,10,10),
             child: Container(
               child: Column(
                 children: <Widget>[
                   Container(
-                    height: 200,
+                    height: MediaQuery.of(context).size.width * 0.4,
                     child: GradientCard(
                       gradient: LinearGradient(
                         colors: [Colors.brown[400], Colors.brown],
@@ -63,7 +63,7 @@ class _HatenessState extends State<Hateness> {
                       elevation: 20,
                       child: Padding(
                         padding: const EdgeInsets.symmetric(
-                            vertical: 10, horizontal: 8),
+                            vertical: 4, horizontal: 8),
                         child: Center(
                           child: Row(
                             children: <Widget>[
@@ -87,7 +87,7 @@ class _HatenessState extends State<Hateness> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 50),
+                  SizedBox(height: MediaQuery.of(context).size.width * 0.050000),
                   TextField(
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
@@ -111,10 +111,10 @@ class _HatenessState extends State<Hateness> {
                     ),
                     controller: t2,
                   ),
-                  SizedBox(height: 50),
+                  SizedBox(height: MediaQuery.of(context).size.width * 0.07),
                   ButtonTheme(
-                    minWidth: 200,
-                    height: 60,
+                     minWidth: MediaQuery.of(context).size.width * 0.060000,
+                  height: MediaQuery.of(context).size.height * 0.090000000,
                     child: RaisedButton(
                       elevation: 10,
                       onPressed: calHateness,

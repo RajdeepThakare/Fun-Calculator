@@ -50,12 +50,12 @@ class _FriendshipState extends State<Friendship> {
       body: ListView(
         children: <Widget>[
           Padding(
-            padding: const EdgeInsets.fromLTRB(20, 30, 20, 50),
+            padding: const EdgeInsets.fromLTRB(10,10,10,10),
             child: Container(
               child: Column(
                 children: <Widget>[
                   Container(
-                    height: 200,
+                    height: MediaQuery.of(context).size.width * 0.450,
                     child: GradientCard(
                       gradient: LinearGradient(
                         colors: [Colors.greenAccent, Colors.lightBlueAccent],
@@ -88,7 +88,7 @@ class _FriendshipState extends State<Friendship> {
                       ),
                     ),
                   ),
-                  SizedBox(height: 50),
+                  SizedBox(height: MediaQuery.of(context).size.width * 0.040000),
                   TextField(
                     keyboardType: TextInputType.text,
                     decoration: InputDecoration(
@@ -101,7 +101,7 @@ class _FriendshipState extends State<Friendship> {
                   Icon(
                     Icons.swap_vert,
                     color: Colors.cyan,
-                    size: 100,
+                    size: 80,
                   ),
                   //SizedBox(height: 1),
                   TextField(
@@ -112,10 +112,10 @@ class _FriendshipState extends State<Friendship> {
                     ),
                     controller: t2,
                   ),
-                  SizedBox(height: 50),
+                  SizedBox(height: MediaQuery.of(context).size.width * 0.080000),
                   ButtonTheme(
-                    minWidth: 200,
-                    height: 60,
+                    minWidth: MediaQuery.of(context).size.width * 0.060000,
+                  height: MediaQuery.of(context).size.height * 0.090000000,
                     child: RaisedButton(
                       elevation: 10,
                       onPressed: calFriendship,

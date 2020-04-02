@@ -4,10 +4,10 @@ import 'package:firebase_admob/firebase_admob.dart';
 
 
 MobileAdTargetingInfo targetingInfo = MobileAdTargetingInfo(
-  keywords: <String>['flutterio', 'beautiful apps', 'games', 'sports', 'free'],
-  contentUrl: 'https://flutter.io',
+  keywords: <String>[ 'beautiful apps', 'games', 'sports', 'free'],
+ // contentUrl: 'https://flutter.io',
 //  birthday: DateTime.now(),
- // childDirected: true,
+ childDirected: true,
 //  designedForFamilies: false,
  // gender: MobileAdGender.male, // or MobileAdGender.female, MobileAdGender.unknown
   testDevices: <String>['512B95F7F4B43AC6309729BA89D817CC'], // Android emulators are considered test devices
@@ -53,6 +53,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    SizedBox(height: 50);
 
     myBanner
   // typically this happens well before the ad is shown
@@ -73,7 +74,7 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.grey[900],
       ),
       body: Padding(
-        padding: const EdgeInsets.fromLTRB(0,0,0,50),
+        padding: EdgeInsets.fromLTRB(0,0,0,MediaQuery.of(context).size.height/15),
         child: Container(
           color: Colors.white,
           padding: EdgeInsets.all(10),
