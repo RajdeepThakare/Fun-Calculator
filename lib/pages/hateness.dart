@@ -55,7 +55,7 @@ class _HatenessState extends State<Hateness> {
               child: Column(
                 children: <Widget>[
                   Container(
-                    height: MediaQuery.of(context).size.width * 0.4,
+                    height: MediaQuery.of(context).size.width * 0.5,
                     child: GradientCard(
                       gradient: LinearGradient(
                         colors: [Colors.brown[400], Colors.brown],

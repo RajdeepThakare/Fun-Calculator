@@ -55,7 +55,7 @@ class _FriendshipState extends State<Friendship> {
               child: Column(
                 children: <Widget>[
                   Container(
-                    height: MediaQuery.of(context).size.width * 0.450,
+                    height: MediaQuery.of(context).size.width * 0.500,
                     child: GradientCard(
                       gradient: LinearGradient(
                         colors: [Colors.greenAccent, Colors.lightBlueAccent],
